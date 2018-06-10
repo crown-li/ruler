@@ -1,2 +1,1 @@
-<view style='text-align:center'>{{scale}}</view>
-<canvas bindtouchstart='start' bindtouchmove='move' style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;margin:0 auto;position: absolute;left:{{currentVal <= 0 ? '' : ''}}px" canvas-id="canvas" id="canvas" disable-scroll='true' ></canvas>
+<canvas bindtouchstart='start' bindtouchmove='move' bindtouchend='end' style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;" canvas-id="canvas" id="canvas" disable-scroll='true' ></canvas>
