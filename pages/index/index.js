@@ -136,7 +136,7 @@ Page({
         currentVal = maxCurrentVal
       }
 
-      currentVal = currentVal / 10
+      currentVal = (currentVal / 10).toFixed(1);
       this.setData({
         currentVal
       })
