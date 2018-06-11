@@ -60,11 +60,9 @@ Page({
     let currentVal = _this.data.currentVal * 10;
 
     //误差修正
-    if (pixelRatio == 2) {
-      pixelRatio = 2
-    } else if (pixelRatio == 2.75) {
+    if (2 < pixelRatio < 3) {
       pixelRatio = 4
-    }
+    } 
 
     let centerPoint = Math.ceil(canvasWidth / 2 + pixelRatio);//中心点
     let preScale = Math.ceil(centerPoint / ratio);//中心点左边平均刻度份数
